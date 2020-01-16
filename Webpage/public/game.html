@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PictioNNary</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/otherstyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="/static/css/logo2.png" alt="logo" />
+        <div id="top-message">
+            <div id="guess">
+                Make a guess:
+                <input id="guess-input" type="text">
+            </div>
+            <div class="drawerTag">You are the drawer! This is your word = <span></span></div>
+        </div>
+        <ul id="NNguesses">
+            Machine guesses:
+            <span type="text" id="guessInList">
+        </ul>
+        <p class="playerJoined">A Player Just Joined,&nbsp </p>
+        <p class="playerLeft">A Player Just Left,&nbsp </p>   
+    </header>
+
+    <div id="main">
+        <canvas id="myCanvas"></canvas>
+        <img id='crayons' src="/static/css/crayons.png">
+    </div>  
+    
+    <script src="//code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script> 
+</body>
+
+</html>

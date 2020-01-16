@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: guesses;
+
+}
+
+@font-face {
+  font-family: headings;
+  src: url(Mona-Free.otf);
+}
+
+@font-face {
+  font-family: guesses;
+  src: url(Matchstick-Regular.otf);
+}
+
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("wood.png");
+}
+
+.header img{
+  height: 250px;
+  float: left;
+}
+
+#top-message {
+  font-family: headings;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffcd58;
+  margin-top: 1%;
+  margin-left: 15%;
+  padding: 10px;
+}
+
+#guess-input {
+  border-radius: 4px;
+  padding: 12px 20px;
+}
+
+#NNguesses {
+  width:500px;
+  font-family: guesses;
+  font-size: 30px;
+  margin-right: 5%;
+  border-radius: 25px;
+  border: 2px solid burlywood;  height: 300px;
+  padding-top:20px;
+  float: right;
+  background-color: white;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+canvas {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  margin-left: 15%;
+  border: 1px #C7CACD solid;
+  background-color: white;
+  display: block;
+  z-index: -1;
+}
+
+#crayons {
+  position: absolute;
+  height: 310px;
+  bottom: 10px;
+}
+.playerJoined,
+.playerLeft {
+  position: absolute;
+  right: 300px;
+  top: 10px;
+  font-family: headings;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  color: white;
+}
+
+.playerJoined {
+  top: 70px;
+  display: none;
+}
+.playerLeft{
+  top: 40px;
+  display: none;
+}

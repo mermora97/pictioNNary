@@ -1,6 +1,8 @@
 
 # PictioNNary
 
+![PictioNNary Logo](/images/pictioNNary_logo.png)
+
 # The project
 PictioNNary is a multiuser online game that introduces neural networks algorithms into the classic board game of making sketches and guessing. This online game has been designed as part of my final project in Ironhack and the purpose is to design and implement a web application similar to "Quick and Draw" by Google (2016) but adding multiuser interaction, within a week. 
 
